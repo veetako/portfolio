@@ -1,14 +1,14 @@
-@import "./config";
+@import "config", "menu";
 
 ::-webkit-scrollbar {
-    width: 13px;
+    width: 8px;
 }
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: transparent;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: $primary-color;
+    background-color: $bg-color;
 }
 
 body {
@@ -32,10 +32,26 @@ a {
 }
 
 
+header {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    .logo {
+        color: $secondary-color;
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+
+
 
 #home {
     height: auto;
-    padding-top: 10rem;
+    padding-top: 7rem;
     box-shadow: 0 7px 10px -5px #dfdfdf;
     .h-content {
         display: flex;

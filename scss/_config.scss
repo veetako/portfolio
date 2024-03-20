@@ -7,6 +7,7 @@ $bg-color: #77adfd;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
 }
 
 .container {
@@ -16,5 +17,5 @@ $bg-color: #77adfd;
 }
 
 @mixin transition-ease {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
