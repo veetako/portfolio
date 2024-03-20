@@ -1,0 +1,20 @@
+$primary-color: #1a1a1a;
+$secondary-color: #fff;
+$bg-color: #77adfd; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 70rem;
+    padding: 0 1rem;
+}
+
+@mixin transition-ease {
+    transition: all 0.2s ease-in-out;
+}

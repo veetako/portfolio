@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 0 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #1a1a1a;
+}
+
+body {
+  font-family: "Cantora One", sans-serif;
+  line-height: 1;
+  color: #1a1a1a;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home {
+  height: auto;
+  padding-top: 10rem;
+  box-shadow: 0 7px 10px -5px #dfdfdf;
+}
+#home .h-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#home .h-content .info {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+#home .h-content .info .description {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+#home .h-content .info .description p {
+  margin-top: 2rem;
+}
+#home .h-content .info .img {
+  background: url("../img/me1.jpg") no-repeat center center/cover;
+  border: 3px solid #1a1a1a;
+  border-radius: 45%;
+  height: 20rem;
+  width: 20rem;
+}
+#home .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+#home .skills p {
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 0.5rem;
+  width: 6rem;
+}
+#home .skills ul {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+#home .skills ul li {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #77adfd;
+  border-radius: 30%;
+}
+
+#about {
+  text-align: center;
+  box-shadow: 0 7px 10px -5px #dfdfdf;
+}
+#about .a-content {
+  padding: 3rem 0;
+}
+#about .a-content h2 {
+  font-size: 2rem;
+}
+#about .a-content p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+#projects {
+  box-shadow: 0 7px 10px -5px #dfdfdf;
+}
+#projects .p-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  gap: 1rem;
+}
+#projects .p-content h2 {
+  font-size: 2rem;
+}
+#projects .p-content i {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 30%;
+  background-color: #77adfd;
+}
+
+#contact .c-content {
+  text-align: center;
+  padding: 3rem 0;
+}
+#contact .c-content h2 {
+  font-size: 2rem;
+}
+#contact .c-content .c-info {
+  display: flex;
+  flex-direction: column;
+}
+#contact .c-content .c-info .contact-box {
+  margin-top: 3rem;
+}
+#contact .c-content .c-info .contact-box i {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #77adfd;
+}
+#contact .c-content .c-info .contact-box h3 {
+  margin: 1rem;
+  font-size: 1.7rem;
+}
+#contact .c-content .c-info .contact-box a {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  transition: all 0.2s ease-in-out;
+}
+#contact .c-content .c-info .contact-box a:hover {
+  color: #77adfd;
+}
+
+footer {
+  font-size: 1rem;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer a {
+  font-size: 2rem;
+  color: #fff;
+  margin-left: 20px;
+  transition: all 0.2s ease-in-out;
+}
+footer a:hover {
+  color: #77adfd;
+}/*# sourceMappingURL=main.css.map */
