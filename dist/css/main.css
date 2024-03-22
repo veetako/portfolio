@@ -66,7 +66,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   opacity: 0.98;
   visibility: hidden;
 }
@@ -91,15 +91,80 @@
 .nav .menu-nav li {
   margin-top: 4rem;
 }
-.nav .menu-nav a {
+.nav .menu-nav li a {
   font-size: 2rem;
   color: #1a1a1a;
   transition: all 0.3s ease-in-out;
 }
-.nav .menu-nav a:hover {
+.nav .menu-nav li a:hover {
   color: #77adfd;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    position: static;
+    visibility: visible;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .nav .menu-nav {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    background: transparent;
+    transform: translateX(0);
+  }
+  .nav .menu-nav li {
+    padding-left: 1.5rem;
+    margin: 0;
+  }
+  .nav .menu-nav li a {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  section#home {
+    height: 100vh;
+    display: flex;
+  }
+  section#home .h-content {
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  section#home .h-content .info {
+    flex-direction: row-reverse;
+  }
+  section#home .h-content .info .description {
+    padding: 0 1rem;
+    margin: 0;
+  }
+  section#home .h-content .info .description .socials {
+    flex-direction: row;
+    justify-content: center;
+  }
+  section#home .h-content .info .description .socials span {
+    border-bottom: none;
+  }
+  section#about .a-content {
+    padding: 3rem 3rem;
+  }
+  section#contact .c-content .c-info {
+    grid: 1fr/1fr 1fr 1fr;
+  }
+  section#contact .c-content .c-info .contact-box {
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1.5rem 6rem;
+  }
+}
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -136,10 +201,10 @@ a {
 header {
   display: flex;
   justify-content: center;
-  background-color: #1a1a1a;
+  background: #1a1a1a;
   position: fixed;
   width: 100%;
-  padding: 20px;
+  padding: 1.5rem;
 }
 header .logo {
   color: #fff;
@@ -171,6 +236,33 @@ header .logo {
 #home .h-content .info .description p {
   margin-top: 2rem;
 }
+#home .h-content .info .description .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+#home .h-content .info .description .socials span {
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 0.5rem;
+  width: 6rem;
+}
+#home .h-content .info .description .socials .social-icons {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+#home .h-content .info .description .socials .social-icons a {
+  font-size: 2rem;
+  color: #1a1a1a;
+  background-color: #77adfd;
+  padding: 0.5rem;
+  border-radius: 30%;
+  border: 1px solid #1a1a1a;
+  box-shadow: 0 0 3px #1a1a1a;
+}
 #home .h-content .info .img {
   background: url("../img/me1.jpg") no-repeat center center/cover;
   border: 3px solid #1a1a1a;
@@ -182,9 +274,9 @@ header .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
-#home .skills p {
+#home .skills span {
   text-align: center;
   font-size: 1.5rem;
   border-bottom: 2px solid #1a1a1a;
@@ -196,6 +288,7 @@ header .logo {
   padding: 1rem;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 #home .skills ul li {
   font-size: 2rem;
@@ -247,8 +340,7 @@ header .logo {
   font-size: 2rem;
 }
 #contact .c-content .c-info {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 #contact .c-content .c-info .contact-box {
   margin-top: 3rem;
@@ -264,7 +356,7 @@ header .logo {
   font-size: 1.7rem;
 }
 #contact .c-content .c-info .contact-box a {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #1a1a1a;
   transition: all 0.3s ease-in-out;
 }
