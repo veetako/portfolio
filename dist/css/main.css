@@ -138,6 +138,7 @@
   }
   section#home .h-content .info {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
   section#home .h-content .info .description {
     padding: 0 1rem;
@@ -149,6 +150,9 @@
   }
   section#home .h-content .info .description .socials span {
     border-bottom: none;
+  }
+  section#home .h-content .info .img {
+    margin-right: 2rem;
   }
   section#about .a-content {
     padding: 3rem 3rem;
@@ -163,6 +167,9 @@
 @media screen and (min-width: 1024px) {
   .header {
     padding: 1.5rem 6rem;
+  }
+  section#home .h-content .info .description {
+    margin-left: 4rem;
   }
 }
 ::-webkit-scrollbar {

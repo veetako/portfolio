@@ -36,6 +36,7 @@
             height: 100%;
             .info {
                 flex-direction: row-reverse;
+                justify-content: space-between;
                 .description {
                     padding: 0 1rem;
                     margin: 0;
@@ -46,6 +47,9 @@
                             border-bottom: none;
                         }
                     }
+                }
+                .img {
+                    margin-right: 2rem;
                 }
             }
         }
@@ -69,11 +73,18 @@
     }
 }
 
-
 @include media-lg {
     .header {
-        padding: 1.5rem 6rem;   
+        padding: 1.5rem 6rem;
+    }
+
+    section#home {
+        .h-content {
+            .info {
+                .description {
+                    margin-left: 4rem;
+                }
+            }
+        }
     }
 }
-
-
