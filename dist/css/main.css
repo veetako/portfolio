@@ -271,7 +271,7 @@ header .logo {
   box-shadow: 0 0 3px #1a1a1a;
 }
 #home .h-content .info .img {
-  background: url("../img/me.jpg") no-repeat center center/cover;
+  background: url(../img/me.jpg) no-repeat center center/cover;
   border: 3px solid #1a1a1a;
   border-radius: 45%;
   height: 20rem;
